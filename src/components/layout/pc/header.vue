@@ -1,13 +1,13 @@
 <template>
-  <div class="main-pc">
-    1
+  <div id="header">
+    header
   </div>
 </template>
 
 <script>
-  export default {
-      name: "MainPc"
-  }
+    export default {
+        name: "Header"
+    }
 </script>
 
 <style scoped lang="scss" ref="stylesheet/scss">

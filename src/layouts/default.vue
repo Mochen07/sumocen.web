@@ -7,7 +7,7 @@
 <script>
   import PcMainView from '@/components/layout/pc/main'
   export default {
-    name: 'layout',
+    name: 'Layout',
     components: {
       PcMainView
     }

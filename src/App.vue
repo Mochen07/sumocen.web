@@ -9,7 +9,7 @@
 import DefaultLayouts from '@/layouts/default'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
       DefaultLayouts
   }
