@@ -1,29 +1,8 @@
 # sumocen.web
 
-## Project setup
+#### 安装依赖
 ```
-yarn install
+yarn add vue-router // vue-router
+yarn add vuex // vuex
+yarn add sass-loader node-sass // sass
 ```
-
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

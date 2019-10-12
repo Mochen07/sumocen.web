@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    天才第一步
+    <!--布局-->
+    <DefaultLayouts />
   </div>
 </template>
 
 <script>
+import DefaultLayouts from '@/layouts/default'
 
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+      DefaultLayouts
+  }
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
