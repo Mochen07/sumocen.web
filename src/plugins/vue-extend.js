@@ -9,7 +9,6 @@ const i18nData = i18nTransfer(i18nConfig)
 Vue.mixin({
   computed: {
     $i18n () {
-      console.log('有没有', window.a = this.$store)
       return i18nData[this.$store.state.global.language]
     }
   }

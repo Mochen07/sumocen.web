@@ -13,10 +13,7 @@
 
 <script>
 export default {
-  name: 'Header',
-  mounted () {
-    console.log(this.$store)
-  }
+  name: 'Header'
 }
 </script>
 
