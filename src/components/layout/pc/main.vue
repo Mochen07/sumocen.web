@@ -1,13 +1,20 @@
 <template>
-  <div class="main-pc">
-    1
+  <div id="app-main" class="main-pc">
+    <header-view />
+    <background />
   </div>
 </template>
 
 <script>
-  export default {
-      name: "MainPc"
+import HeaderView from './header'
+import Background from '@/components/widget/background'
+export default {
+  name: 'MainPc',
+  components: {
+    HeaderView,
+    Background
   }
+}
 </script>
 
 <style scoped lang="scss" ref="stylesheet/scss">

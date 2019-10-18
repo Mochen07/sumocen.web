@@ -13,16 +13,16 @@
 </template>
 
 <script>
-  export default {
-    layout: 'empty',
-    props: ['error'],
-    mounted() {
-      this.$store.commit('global/updateThreeColumnsState', true)
-    },
-    beforeDestroy() {
-      this.$store.commit('global/updateThreeColumnsState', false)
-    }
+export default {
+  layout: 'empty',
+  props: ['error'],
+  mounted () {
+    this.$store.commit('global/updateThreeColumnsState', true)
+  },
+  beforeDestroy () {
+    this.$store.commit('global/updateThreeColumnsState', false)
   }
+}
 </script>
 
 <style lang="scss" scoped>
