@@ -1,13 +1,17 @@
 <template>
   <div class="home">
-    6666666666666
+    <Carrousel />
     <div style="height: 1000px;background:rgba(0,0,0,0.5)"></div>
   </div>
 </template>
 
 <script>
+import Carrousel from '@/components/archive/carrousel'
 export default {
-  name: 'home'
+  name: 'home',
+  components: {
+    Carrousel
+  }
 }
 </script>
 
