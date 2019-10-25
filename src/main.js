@@ -5,8 +5,10 @@ import store from './store'
 import { i18nData } from '@/plugins/vue-extend'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
+import empty from '@/components/global/empty'
 // 轮播组件
 Vue.use(VueAwesomeSwiper, /* { default global options } */)
+Vue.use(empty)
 
 Vue.config.productionTip = false
 

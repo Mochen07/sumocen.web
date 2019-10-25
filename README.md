@@ -6,4 +6,5 @@ yarn add vue-router // vue-router
 yarn add vuex // vuex
 yarn add sass-loader node-sass // sass
 yarn add eslint-plugin-vue-libs // eslint
+yarn add vue-awesome-swiper // swiper
 ```
