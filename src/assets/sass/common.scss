@@ -49,17 +49,17 @@
 }
 
 ::selection {
-  background: $primary; 
+  background: $primary;
   color: $reversal;
 }
 
 ::-moz-selection {
-  background: $primary; 
+  background: $primary;
   color: $reversal;
 }
 
 ::-webkit-selection {
-  background: $primary; 
+  background: $primary;
   color: $reversal;
 }
 
@@ -114,10 +114,10 @@ input {
   }
 }
 
-input:-webkit-autofill, 
-textarea:-webkit-autofill, 
+input:-webkit-autofill,
+textarea:-webkit-autofill,
 select:-webkit-autofill {
-  box-shadow: 0 0 0px 1000px rgb(230, 230, 230) inset; 
+  box-shadow: 0 0 0px 1000px rgb(230, 230, 230) inset;
 }
 
 a {
@@ -140,7 +140,7 @@ a {
 .filter {
 
   &.motion-blur-horizontal {
-    filter: url('https://surmon.me/images/motion-blur-filter.svg#horizontal');
+    //filter: url('https://surmon.me/images/motion-blur-filter.svg#horizontal');
   }
 
   &.motion-blur-horizontal-small {
@@ -214,10 +214,10 @@ a {
     }
 
     &.mobile {
-      
+
       > .mammon-wrapper {
         padding: 1rem;
-  
+
         > .adsbygoogle {
           height: 6rem;
         }
@@ -323,7 +323,7 @@ a {
     max-width: 90%;
     max-height: 90%;
   }
-  
+
   > iframe {
     width: 90%;
     height: 90%;

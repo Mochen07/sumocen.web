@@ -7,13 +7,17 @@
       @transitionStart="handleSwiperTransitionStart"
       @transitionEnd="handleSwiperTransitionEnd"
     >
-      <div class="swiper-wrapper">
-        <div class="swiper-slide slide-item" v-for="banner in banners">
+      <div class="swiper-slide slide-item" v-for="banner in banners">
+        <div
+          class="content filter"
+          :class="{ 'motion-blur-horizontal': transitioning }"
+        >
           <img :src="banner" alt=""/>
+          <span class="title">好好说话</span>
         </div>
       </div>
       <!--指示器-->
-      <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+      <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets" slot="pagination"></div>
     </swiper>
   </div>
 </template>
@@ -26,6 +30,7 @@ export default {
       // 模拟数据
       banners: ['https://static.surmon.me/Fh_ClBKvuODidaV8qhO3xBOu7C2d?imageView2/1/w/1190/h/420/format/webp/interlace/1/q/80|watermark/2/text/U3VybW9uLm1l/font/Y2FuZGFyYQ==/fontsize/680/fill/I0ZGRkZGRg==/dissolve/30/gravity/SouthWest/dx/30/dy/15|imageslim', 'https://static.surmon.me/FmzWazqBZBT5J9SQSxQNae6VCeYc?imageView2/1/w/1190/h/420/format/webp/interlace/1/q/80|watermark/2/text/U3VybW9uLm1l/font/Y2FuZGFyYQ==/fontsize/680/fill/I0ZGRkZGRg==/dissolve/30/gravity/SouthWest/dx/30/dy/15|imageslim', 'https://static.surmon.me/Fh_ClBKvuODidaV8qhO3xBOu7C2d?imageView2/1/w/1190/h/420/format/webp/interlace/1/q/80|watermark/2/text/U3VybW9uLm1l/font/Y2FuZGFyYQ==/fontsize/680/fill/I0ZGRkZGRg==/dissolve/30/gravity/SouthWest/dx/30/dy/15|imageslim'],
       renderSwiper: true,
+      transitioning: false,
       swiperOption: {
         autoplay: {
           delay: 3500,
@@ -41,7 +46,7 @@ export default {
         // 禁用 PC 拖动手指样式
         grabCursor: false,
         // 警用 PC 拖动
-        simulateTouch: true,
+        simulateTouch: false,
         preloadImages: false,
         lazy: true
       }
@@ -95,6 +100,35 @@ export default {
 
           &:hover {
             @include css3-prefix(transform, scale(1.06));
+          }
+        }
+
+        .title {
+          position: absolute;
+          margin: 0;
+          top: 1.5rem;
+          right: 2rem;
+          color: $link-color;
+          padding-right: .6em;
+          padding-left: 1em;
+          height: 2em;
+          line-height: 2em;
+          font-size: 1em;
+          font-weight: bold;
+          border-radius: 1px;
+          letter-spacing: .3px;
+          max-width: 75%;
+          @include text-overflow;
+
+          -webkit-background-clip: text;
+          // background-color: $module-hover-bg-opacity-9;
+          background: linear-gradient(90deg, transparent 0%, $module-bg 2em, $module-bg-opacity-9, $reversal);
+
+          &:hover {
+            color: $text-darken;
+            // background: none;
+            padding-left: .6em;
+            background-color: $module-bg;
           }
         }
       }
