@@ -2,7 +2,7 @@
   <div class="announcement">
     <div class="title">
       <span
-        class="font-icon"
+        class="icon-box"
         :style="{transform: `rotate(180deg)`}"
       >
         <i class="iconfont icon-windmill"></i>
