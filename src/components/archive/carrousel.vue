@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       // 模拟数据
-      banners: ['https://static.surmon.me/Fh_ClBKvuODidaV8qhO3xBOu7C2d?imageView2/1/w/1190/h/420/format/webp/interlace/1/q/80|watermark/2/text/U3VybW9uLm1l/font/Y2FuZGFyYQ==/fontsize/680/fill/I0ZGRkZGRg==/dissolve/30/gravity/SouthWest/dx/30/dy/15|imageslim', 'https://static.surmon.me/FmzWazqBZBT5J9SQSxQNae6VCeYc?imageView2/1/w/1190/h/420/format/webp/interlace/1/q/80|watermark/2/text/U3VybW9uLm1l/font/Y2FuZGFyYQ==/fontsize/680/fill/I0ZGRkZGRg==/dissolve/30/gravity/SouthWest/dx/30/dy/15|imageslim', 'https://static.surmon.me/Fh_ClBKvuODidaV8qhO3xBOu7C2d?imageView2/1/w/1190/h/420/format/webp/interlace/1/q/80|watermark/2/text/U3VybW9uLm1l/font/Y2FuZGFyYQ==/fontsize/680/fill/I0ZGRkZGRg==/dissolve/30/gravity/SouthWest/dx/30/dy/15|imageslim'],
+      banners: ['https://static.surmon.me/FjslMtepSb9mk4utpbAL5kqqxiBh?imageView2/1/w/1190/h/420/format/webp/interlace/1/q/80|watermark/2/text/U3VybW9uLm1l/font/Y2FuZGFyYQ==/fontsize/680/fill/I0ZGRkZGRg==/dissolve/30/gravity/SouthWest/dx/30/dy/15|imageslim', 'https://static.surmon.me/FmzWazqBZBT5J9SQSxQNae6VCeYc?imageView2/1/w/1190/h/420/format/webp/interlace/1/q/80|watermark/2/text/U3VybW9uLm1l/font/Y2FuZGFyYQ==/fontsize/680/fill/I0ZGRkZGRg==/dissolve/30/gravity/SouthWest/dx/30/dy/15|imageslim', 'https://static.surmon.me/Fh_ClBKvuODidaV8qhO3xBOu7C2d?imageView2/1/w/1190/h/420/format/webp/interlace/1/q/80|watermark/2/text/U3VybW9uLm1l/font/Y2FuZGFyYQ==/fontsize/680/fill/I0ZGRkZGRg==/dissolve/30/gravity/SouthWest/dx/30/dy/15|imageslim'],
       renderSwiper: true,
       transitioning: false,
       swiperOption: {
