@@ -43,11 +43,11 @@
           }"
         >
           <!--today-->
-          <nuxt-link
+          <router-link
             :to="`/date/${ formatDate(day.getFullYear(), day.getMonth() + 1, day.getDate())}`"
           >
             {{ day.getDate() }}
-          </nuxt-link>
+          </router-link>
         </span>
       </li>
     </ul>
@@ -83,6 +83,7 @@ export default {
       this.currentYear = date.getFullYear()
       this.currentMonth = date.getMonth() + 1
       this.currentWeek = date.getDay()
+      // eslint-disable-next-line
       if (this.currentWeek == 0) this.currentWeek = 7
       const str = this.formatDate(this.currentYear, this.currentMonth, this.currentDay)
       // console.log("today:" + str + "," + this.currentWeek)
