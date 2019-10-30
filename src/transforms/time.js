@@ -1,10 +1,4 @@
-/**
- * @file Time Filters / ES module
- * @module transforms/time-filter
- * @author Surmon <https://github.com/surmon-china>
- */
-
-import systemConstants from '~/constants/system'
+import systemConstants from '@/constants/system'
 
 // 取剩余秒
 const pluralize = (time, label, isEnLang) => {
