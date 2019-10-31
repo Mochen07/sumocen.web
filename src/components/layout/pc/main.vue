@@ -23,18 +23,20 @@
         <aside-view />
       </transition>
     </main>
+    <footer-view />
   </div>
 </template>
 
 <script>
 import Background from '@/components/widget/background'
 import HeaderView from './header'
+import FooterView from './footer'
 import NavView from './nav'
 import AsideView from './aside/main'
 export default {
   name: 'MainPc',
   components: {
-    HeaderView, NavView, AsideView, // layout
+    HeaderView, NavView, AsideView, FooterView, // layout
     Background
   }
 }

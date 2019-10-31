@@ -3,7 +3,6 @@
     <Carrousel />
     <Announcement />
     <HomeList />
-    <div style="height: 1000px;background:rgba(0,0,0,0.5)"></div>
   </div>
 </template>
 
