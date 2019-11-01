@@ -2,7 +2,25 @@
   <aside id="aside" class="aside">
     <div class="aside-search">
       <div class="search-box">
-        search-box
+        <input
+          id="keyword"
+          required
+          list="keywords"
+          type="search"
+          name="search"
+          class="search-input"
+          :placeholder="$i18n.text.search"
+          v-model.trim="keyword"
+          @keyup.enter="handleSearch"
+        />
+        <button class="search-btn" @click="handleSearch">
+          <i class="iconfont icon-search"></i>
+        </button>
+        <router-link to="/sitemap" class="sitemap-btn">
+          <i class="iconfont icon-book"></i>
+        </router-link>
+        <!--id = keywords 为了input里面的list-->
+        <span v-if="false" id="keywords"></span>
       </div>
     </div>
     <div class="aside-article">
@@ -35,6 +53,17 @@ export default {
   name: 'aside-view',
   components: {
     Calendar
+  },
+  data () {
+    return {
+      keyword: ''
+    }
+  },
+  methods: {
+    // 搜索
+    handleSearch () {
+      // ...
+    }
   }
 }
 </script>
@@ -54,6 +83,57 @@ export default {
     .aside-mammon,
     .aside-tag {
       @include module-blur-bg();
+    }
+
+    .aside-search {
+      margin-bottom: 1em;
+
+      > .search-box {
+        padding: .5em;
+        overflow: hidden;
+
+        > .search-input,
+        > .search-btn,
+        > .sitemap-btn {
+          background-color: $module-hover-bg;
+          height: 2em;
+          line-height: 2em;
+          float: left;
+
+          &:hover {
+            background-color: $module-hover-bg-darken-20;
+          }
+        }
+
+        > .search-input {
+          margin-right: 0;
+          width: calc(100% - 5.5em - 1px);
+          box-sizing: border-box;
+
+          &::-webkit-calendar-picker-indicator {
+            display: none;
+          }
+        }
+
+        > .search-btn {
+          width: 2em;
+          background-color: $module-hover-bg-darken-20;
+
+          &:hover {
+            background-color: $module-hover-bg-darken-40;
+          }
+        }
+
+        > .sitemap-btn {
+          text-align: center;
+          float: right;
+          width: 3em;
+
+          > .iconfont {
+            font-size: $font-size-h3;
+          }
+        }
+      }
     }
 
     >.aside-article {
