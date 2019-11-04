@@ -43,6 +43,38 @@
     <div class="aside-calendar">
       <calendar />
     </div>
+    <div class="aside-fixed-box" :class="{ fixed: false }">
+      <ul class="aside-tag-list">
+        <router-link
+          tag="li"
+          class="item"
+          :key="index"
+          :to="`/tag/${tag}`"
+          v-for="(tag, index) in 7"
+        >
+          <a class="title" :title="111111111">
+            <i
+              class="iconfont"
+              :class="'icon-math'"
+            ></i>
+            <span>{{ '计算机' }}</span>
+            <span>({{ 0 }})</span>
+          </a>
+        </router-link>
+      </ul>
+      <div class="aside-tools" v-if="false">
+        <div class="full-column">
+          <span v-text="$i18n.text.article.fullcolread"></span>
+          <span>&nbsp;&nbsp;</span>
+          <i class="iconfont icon-read"></i>
+        </div>
+        <div class="full-page">
+          <span v-text="$i18n.text.article.fullscreenread"></span>
+          <span>&nbsp;&nbsp;</span>
+          <i class="iconfont icon-fullscreen"></i>
+        </div>
+      </div>
+    </div>
     <div style="height: 1000px;background:rgba(255,192,203,0.5)"></div>
   </aside>
 </template>
