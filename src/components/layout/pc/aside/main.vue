@@ -44,38 +44,27 @@
       <calendar />
     </div>
     <div class="aside-fixed-box" :class="{ fixed: false }">
-      <ul class="aside-tag-list">
-        <router-link
-          tag="li"
-          class="item"
-          :key="index"
-          :to="`/tag/${tag}`"
-          v-for="(tag, index) in 7"
-        >
-          <a class="title" :title="111111111">
-            <i
-              class="iconfont"
-              :class="'icon-math'"
-            ></i>
-            <span>{{ '计算机' }}</span>
-            <span>({{ 0 }})</span>
-          </a>
-        </router-link>
-      </ul>
-      <div class="aside-tools" v-if="false">
-        <div class="full-column">
-          <span v-text="$i18n.text.article.fullcolread"></span>
-          <span>&nbsp;&nbsp;</span>
-          <i class="iconfont icon-read"></i>
-        </div>
-        <div class="full-page">
-          <span v-text="$i18n.text.article.fullscreenread"></span>
-          <span>&nbsp;&nbsp;</span>
-          <i class="iconfont icon-fullscreen"></i>
-        </div>
+      <div class="aside-tag">
+        <ul class="aside-tag-list">
+          <router-link
+            tag="li"
+            class="item"
+            :key="index"
+            :to="`/tag/${tag}`"
+            v-for="(tag, index) in 17"
+          >
+            <a class="title" :title="111111111">
+              <i
+                class="iconfont"
+                :class="'icon-math'"
+              ></i>
+              <span>{{ '计算机' }}</span>
+              <span>({{ 0 }})</span>
+            </a>
+          </router-link>
+        </ul>
       </div>
     </div>
-    <div style="height: 1000px;background:rgba(255,192,203,0.5)"></div>
   </aside>
 </template>
 
@@ -257,6 +246,54 @@ export default {
     .aside-calendar {
       padding: .8em;
       margin-bottom: 1em;
+    }
+
+    .aside-fixed-box {
+      width: $aside-width;
+
+      > .aside-tag {
+        width: 19em;
+        padding-left: 1rem;
+        border-top: 1rem solid transparent;
+        border-bottom: 1rem solid transparent;
+        margin-bottom: 1em;
+
+        .empty-box {
+          padding-right: .8em;
+          padding-bottom: .8em;
+        }
+
+        .aside-tag-list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          overflow: hidden;
+
+          .item {
+            display: inline-block;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            height: 2em;
+            line-height: 2em;
+            text-transform: capitalize;
+            background-color: $module-hover-bg;
+
+            &:hover {
+              background-color: $module-hover-bg-darken-40;
+            }
+
+            &:last-child {
+              margin: 0;
+            }
+
+            .title {
+              display: block;
+              padding: 0 .5em;
+              font-family: $sans-serif;
+            }
+          }
+        }
+      }
     }
   }
 </style>
