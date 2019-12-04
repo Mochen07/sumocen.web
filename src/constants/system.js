@@ -1,8 +1,8 @@
 /**
  * @file System constant / ES module
  * @module system.constant
- * @author Surmon <https://github.com/surmon-china>
  */
+/* eslint-disable */
 
 export const Language = {
   Zh: 'zh',
