@@ -10,7 +10,7 @@
         </span>
           <img
             class="item-thumb-img"
-            src="https://static.surmon.me/Fn3cbhQGzyjdeRF6CvI2VpUjMazF?imageView2/1/w/350/h/238/format/webp/interlace/1/q/75|watermark/2/text/U3VybW9uLm1l/font/Y2FuZGFyYQ==/fontsize/460/fill/I0ZGRkZGRg==/dissolve/23/gravity/SouthWest/dx/15/dy/7|imageslim"
+            src="./../../assets/image/list/dream.jpg"
             alt="哈哈哈哈哈哈哈哈哈"
             title="哈哈哈哈哈哈哈哈哈"
           >
