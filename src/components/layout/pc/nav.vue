@@ -60,8 +60,9 @@
         <i class="iconfont icon-aliyun"></i>
         <span v-text="$i18n.nav.aliyun"></span>
       </a>
+      <!-- 20200106频闭 功能网站 客户端
       <a
-        href="https://throwerror.io"
+        href="https://sumocen.com"
         target="_blank"
         class="item ad errend"
         rel="external nofollow noopener"
@@ -70,7 +71,7 @@
         <span>TE.io</span>
       </a>
       <a
-        href="https://foxfinder.io"
+        href="https://sumocen.com"
         target="_blank"
         class="item ad foxfinder"
         rel="external nofollow noopener"
@@ -82,6 +83,7 @@
         <i class="iconfont icon-app"></i>
         <span v-text="$i18n.nav.app"></span>
       </router-link>
+      -->
     </nav>
   </div>
 </template>

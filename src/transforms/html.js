@@ -1,9 +1,3 @@
-/**
- * @file Text Filters / ES module
- * @module transforms/html-filter
- * @author Surmon <https://github.com/surmon-china>
- */
-
 // 文字溢出过滤器
 export const textOverflow = (text, customLength) => {
   const length = customLength || text.length

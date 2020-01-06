@@ -1,7 +1,5 @@
 /**
- * @file UA 解析器 / ES module
- * @module transforms/ua-device
- * @author Surmon <https://github.com/surmon-china>
+ * @file UA 当前设备解析器 / ES module
  */
 
 export default userAgent => ({

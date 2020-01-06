@@ -21,56 +21,44 @@ export default {
   data: {
     nav: {
       home: {
-        zh: '明殿',
+        zh: '首页',
         en: 'home'
       },
       think: {
-        zh: '无色庵',
+        zh: '想法',
         en: 'think'
       },
       code: {
-        zh: '宁静寺',
+        zh: '代码',
         en: 'code'
       },
       project: {
-        zh: '琼宝阁',
+        zh: '项目',
         en: 'project'
       },
       vlog: {
-        zh: '天涯',
+        zh: '视频',
         en: 'vlog'
       },
       music: {
-        zh: '乐斋',
+        zh: '音乐',
         en: 'music'
       },
       about: {
-        zh: '狂浪生',
+        zh: '生活',
         en: 'about'
       },
       service: {
-        zh: '得道',
+        zh: '服务器',
         en: 'service'
       },
       guestbook: {
-        zh: '百鸣苑',
+        zh: '留言板',
         en: 'Guestbook'
-      },
-      taobao: {
-        zh: '淘抢购',
-        en: 'taobao'
-      },
-      aliyun: {
-        zh: '弹性主机',
-        en: 'aliyun'
       },
       app: {
         zh: '客户端',
-        en: 'app'
-      },
-      map: {
-        zh: '怀柔天下',
-        en: 'SiteMap.XML'
+        en: 'App'
       }
     },
     text: {
@@ -79,30 +67,20 @@ export default {
         en: 'No Result Data.'
       },
       notFound: {
-        zh: '众里寻他 我已不再',
+        zh: '当前页面为空',
         en: 'Arrives here at last'
       },
       backToHomePage: {
-        zh: '山河万里 长歌归故',
+        zh: '回到首页',
         en: 'Driveby'
       },
       guestbook: {
-        zh: '此心光明 亦复何言',
+        zh: '书',
         en: 'You have come a long way'
       },
       wallpaper: {
-        zh: '山河入梦',
+        zh: '我的页面',
         en: 'Wallpaper'
-      },
-      service: {
-        slogan: {
-          zh: '为我一挥手，如临万壑松',
-          en: 'Talk is cheap. Show me the code'
-        },
-        emailMe: {
-          zh: '即破楼兰',
-          en: 'Email ME'
-        }
       },
       device: {
         android: {
@@ -112,42 +90,6 @@ export default {
         ios: {
           zh: 'IOS',
           en: 'IOS'
-        }
-      },
-      webrtc: {
-        zh: '视频会议',
-        en: ' WebRTC'
-      },
-      barrage: {
-        name: {
-          zh: '弹幕吐槽',
-          en: 'Barrage'
-        }
-      },
-      feedback: {
-        zh: '邮件反馈',
-        en: 'Feedback'
-      },
-      totop: {
-        zh: '从头开始',
-        en: 'To top'
-      },
-      tobottom: {
-        zh: '再来一屏',
-        en: 'Next screen'
-      },
-      origin: {
-        original: {
-          zh: '原创',
-          en: 'og'
-        },
-        reprint: {
-          zh: '转载',
-          en: 'rp'
-        },
-        hybrid: {
-          zh: ' 混撰',
-          en: 'hb'
         }
       },
       action: {
@@ -169,12 +111,12 @@ export default {
         }
       },
       slogan: {
-        zh: '來蘇之望，念狂夢猖',
+        zh: '明月几时有，把酒问青天',
         en: 'Because the mountain was there.'
       },
       music: {
         empty: {
-          zh: '五音六律，七弦八度',
+          zh: '音乐走起',
           en: 'The music, the soul of man.'
         }
       },
@@ -189,7 +131,7 @@ export default {
         }
       },
       search: {
-        zh: '向外探索，向内觉知',
+        zh: '搜索',
         en: 'Search...'
       },
       tag: {
@@ -228,28 +170,28 @@ export default {
           en: 'No Result Article.'
         },
         hotlist: {
-          zh: '群贤毕至',
+          zh: '热门',
           en: 'hot'
         },
         loadmore: {
-          zh: '山河入梦',
+          zh: '加载更多',
           en: 'loadmore'
         },
         loading: {
-          zh: '人面桃花',
+          zh: '等待中',
           en: 'loading'
         },
         nomore: {
-          zh: '春尽江南',
+          zh: '没有更多了',
           en: 'no more'
         }
       },
-      page: {
-        name: {
-          zh: '黄卷青灯',
-          en: 'pages'
-        }
-      },
+      // page: {
+      //   name: {
+      //     zh: '黄卷青灯',
+      //     en: 'pages'
+      //   }
+      // },
       announcement: {
         empty: {
           zh: '空空如也',
@@ -282,86 +224,6 @@ export default {
             zh: '更旧',
             en: 'old'
           }
-        },
-        profile: {
-          name: {
-            zh: '名字',
-            en: 'name'
-          },
-          email: {
-            zh: '邮箱',
-            en: 'email'
-          },
-          site: {
-            zh: '网址',
-            en: 'site'
-          },
-          content: {
-            zh: '内容',
-            en: 'content'
-          },
-          emailerr: {
-            zh: '邮箱不合法',
-            en: 'Email address is not legitimate!'
-          },
-          siteerr: {
-            zh: '网址不合法',
-            en: 'Site is not legitimate!'
-          },
-          contenterr: {
-            zh: '内容需要在 2000字/36行 以内',
-            en: 'Content requirements are within 2000 words / 36 lines!'
-          },
-          submiterr: {
-            zh: '发布失败，原因 -> 控制台',
-            en: 'Submit err, get err in dev console!'
-          },
-          actionerr: {
-            zh: '操作失败，原因 -> 控制台',
-            en: 'Action err, get err in dev console!'
-          }
-        },
-        setting: {
-          account: {
-            zh: '设置账户信息',
-            en: 'account setting'
-          },
-          edit: {
-            zh: '编辑信息',
-            en: 'edit profile'
-          },
-          clear: {
-            zh: '清空信息',
-            en: 'clear profile'
-          }
-        },
-        placeholder: {
-          zh: '愿你的见解一针见血',
-          en: 'Hit the nail on the head.'
-        },
-        count: {
-          zh: '条看法',
-          en: 'comments'
-        },
-        like: {
-          zh: '人觉得有点牛逼',
-          en: ' likes'
-        },
-        new: {
-          zh: '最新',
-          en: 'new'
-        },
-        hot: {
-          zh: '最热',
-          en: 'hot'
-        },
-        submit: {
-          zh: '发射',
-          en: 'publish'
-        },
-        submiting: {
-          zh: '发射中...',
-          en: 'publishing'
         }
       }
     }

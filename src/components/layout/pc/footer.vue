@@ -2,7 +2,7 @@
   <footer id="footer" class="footer">
     <div class="container">
       <div class="footer-content">
-        <span>翩翩起舞</span>
+        <span>Sumocen</span>
         <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
         <span>
           <span>由&nbsp;</span>
@@ -21,11 +21,11 @@
             rel="external nofollow noopener"
             href="https://github.com/Mochen07/sumocen.web"
           >
-            Nuxt.js
+            Vue
           </a>
-          <span>&nbsp;和&nbsp;日月星辰&nbsp;强力驱动&nbsp;</span>
+          <span>&nbsp;和&nbsp;平平安安&nbsp;天天开心&nbsp;</span>
           <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-          <span>&nbsp;行针步线</span>
+          <span>&nbsp;快快乐乐</span>
         </span>
       </div>
     </div>

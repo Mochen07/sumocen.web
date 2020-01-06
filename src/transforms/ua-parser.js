@@ -1,7 +1,5 @@
 /**
- * @file 评论模块 UA、OS 解析器 / ES module
- * @module transforms/browser-os-parse
- * @author Surmon <https://github.com/surmon-china>
+ * @file 评论模块 UA、OS 解析器
  */
 
 const matchUa = (data, key) => data.match(eval(`/${key}/ig`))
@@ -9,7 +7,6 @@ const buildSpan = (span, icon, text) => `<span class="${span}"><i class="iconfon
 
 // 浏览器解析
 export const browserParser = ua => {
-
   const getR1 = r => r[0].split('/')
   const defaultRule = () => buildSpan('ua_other', 'internet', '其它浏览器')
 
@@ -90,7 +87,6 @@ export const browserParser = ua => {
 
 // OS 解析
 export const osParser = ua => {
-
   const defaultRule = () => buildSpan('os_other', 'phone', 'Other')
   const matchWin = () => {
     if (matchUa(ua, 'nt 5.1')) {
@@ -111,33 +107,33 @@ export const osParser = ua => {
       return buildSpan('os_windows', 'windows', 'Windows')
     }
   }
-  
+
   const rules = [
     {
       key: 'win',
       template: () => matchWin()
     },
-    {  
+    {
       key: 'android',
       template: () => buildSpan('os_android', 'android', 'Android')
     },
-    {  
+    {
       key: 'ubuntu',
       template: () => buildSpan('os_ubuntu', 'ubuntu', 'Ubuntu')
     },
-    {  
+    {
       key: 'linux',
       template: () => buildSpan('os_linux', 'linux', 'Linux')
     },
-    {  
+    {
       key: 'iphone',
       template: () => buildSpan('os_mac', 'mac', 'iPhone OS')
     },
-    {  
+    {
       key: 'mac',
       template: () => buildSpan('os_mac', 'mac', 'Mac OS X')
     },
-    {  
+    {
       key: 'unix',
       template: () => buildSpan('os_unix', 'unix', 'Unix')
     }

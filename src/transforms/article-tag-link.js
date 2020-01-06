@@ -1,9 +1,3 @@
-/**
- * @file 文章 -> 标签内链关系构造器 / ES module
- * @module transforms/article-tag-link
- * @author Surmon <https://github.com/surmon-china>
- */
-
 export default (text, tags) => {
 
   // 首字母大写
